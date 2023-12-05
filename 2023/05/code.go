@@ -9,16 +9,6 @@ import (
 	"github.com/jpillora/puzzler/harness/aoc"
 )
 
-type Maps struct {
-	SeedToSoil         map[int]int
-	SoilToFertilizer   map[int]int
-	FertilizerToWater  map[int]int
-	WaterToLight       map[int]int
-	LightToTemp        map[int]int
-	TempToHumidity     map[int]int
-	HumidityToLocation map[int]int
-}
-
 func main() {
 	aoc.Harness(run)
 }
